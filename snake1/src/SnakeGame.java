@@ -90,7 +90,7 @@ public class SnakeGame extends JPanel implements ActionListener,KeyListener{
         g.setFont(new Font("Arial",Font.PLAIN,16));
         if(gameover){
             g.setColor(Color.red);
-            g.drawString("Game Over" + String.valueOf(snakebody.size()),tileSize-16,tileSize);
+            g.drawString("Game Over : " + String.valueOf(snakebody.size()),tileSize-16,tileSize);
         }
         else {
             g.drawString("Score : " + String.valueOf(snakebody.size()),tileSize-16,tileSize);
